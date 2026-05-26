@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Loops e Estruturas de Repetição em Python</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="presentation">
+
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- SLIDE 1 -->
+
+<div class="slide slide-cover active">
+
+<div class="slide-content">
+
+<div class="icon-main">
+<i class="fa-solid fa-rotate"></i>
+</div>
+
+<h1>
+Loops e Estruturas de<br>
+<span class="highlight">
+Repetição em Python
+</span>
+</h1>
+
+<p class="subtitle">
+Dominando FOR e WHILE para automatizar tarefas
+</p>
+
+<div class="badge">
+<i class="fa-brands fa-python"></i>
+PYTHON BÁSICO AO AVANÇADO
+</div>
+
+<div class="slide-footer">
+<span class="logo-text">
+AULA PRÁTICA
+</span>
+
+<span>
+Slide 1 / 8
+</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- SLIDE 2 -->
+
+<div class="slide scrollable">
+
+<div class="slide-content">
+
+<h2>
+<i class="fa-solid fa-lightbulb"></i>
+O que é Iteração?
+</h2>
+
+<div class="two-columns">
+
+<div>
+
+<p>
+Iteração é repetir um bloco de código várias vezes.
+</p>
+
+<ul>
+<li>Automatiza tarefas repetitivas</li>
+<li>Processa listas e dados</li>
+<li>Evita copiar e colar</li>
+<li>Torna programas mais eficientes</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<div class="card-title">
+<i class="fa-solid fa-check"></i>
+Exemplo
+</div>
+
+<div class="code-block">
+
+<span class="keyword">for</span>
+i
+<span class="keyword">in</span>
+<span class="function">range</span>(<span class="number">5</span>):<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<span class="function">print</span>(i)
+
+</div>
+
+</div>
+
+</div>
+
+<div class="slide-footer">
+<span class="logo-text">PYTHON</span>
+<span>Slide 2 / 8</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- SLIDE 3 -->
+
+<div class="slide">
+
+<div class="slide-content">
+
+<h2>
+<i class="fa-solid fa-arrow-right"></i>
+O Loop FOR
+</h2>
+
+<p>
+Use o FOR quando souber quantas vezes deseja repetir algo.
+</p>
+
+<div class="code-block">
+
+<span class="keyword">for</span>
+i
+<span class="keyword">in</span>
+<span class="function">range</span>(<span class="number">1</span>, <span class="number">6</span>):<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<span class="function">print</span>(i)
+
+</div>
+
+<div class="slide-footer">
+<span class="logo-text">PYTHON</span>
+<span>Slide 3 / 8</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- SLIDE 4 -->
+
+<div class="slide scrollable">
+
+<div class="slide-content">
+
+<h2>
+<i class="fa-solid fa-list-ol"></i>
+A função range()
+</h2>
+
+<div class="code-block">
+
+<span class="function">range</span>(<span class="number">5</span>)<br><br>
+
+<span class="function">range</span>(<span class="number">1</span>, <span class="number">10</span>)<br><br>
+
+<span class="function">range</span>(<span class="number">0</span>, <span class="number">20</span>, <span class="number">2</span>)
+
+</div>
+
+<p>
+A função range() cria sequências numéricas usadas no FOR.
+</p>
+
+<div class="slide-footer">
+<span class="logo-text">PYTHON</span>
+<span>Slide 4 / 8</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- SLIDE 5 -->
+
+<div class="slide scrollable">
+
+<div class="slide-content">
+
+<h2>
+<i class="fa-solid fa-sync"></i>
+O Loop WHILE
+</h2>
+
+<p>
+Use o WHILE quando a repetição depender de uma condição.
+</p>
+
+<div class="code-block">
+
+contador = <span class="number">1</span><br><br>
+
+<span class="keyword">while</span>
+contador <= <span class="number">5</span>:<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<span class="function">print</span>(contador)<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+contador += <span class="number">1</span>
+
+</div>
+
+<div class="slide-footer">
+<span class="logo-text">PYTHON</span>
+<span>Slide 5 / 8</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- SLIDE 6 -->
+
+<div class="slide">
+
+<div class="slide-content">
+
+<h2 style="color:var(--accent-red)">
+<i class="fa-solid fa-triangle-exclamation"></i>
+Loop Infinito
+</h2>
+
+<div class="warning-box">
+
+<i class="fa-solid fa-circle-exclamation"></i>
+
+<div>
+
+<h3 style="color:var(--accent-red)">
+ATENÇÃO
+</h3>
+
+<p>
+Se a condição nunca mudar,
+o loop nunca termina.
+</p>
+
+</div>
+
+</div>
+
+<div class="slide-footer">
+<span class="logo-text">PYTHON</span>
+<span>Slide 6 / 8</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- SLIDE 7 -->
+
+<div class="slide scrollable">
+
+<div class="slide-content">
+
+<h2>
+<i class="fa-solid fa-scale-balanced"></i>
+FOR vs WHILE
+</h2>
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+<th>FOR</th>
+<th>WHILE</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Quantidade fixa</td>
+<td>Baseado em condição</td>
+</tr>
+
+<tr>
+<td>Mais simples</td>
+<td>Mais flexível</td>
+</tr>
+
+<tr>
+<td>Menos chance de erro</td>
+<td>Pode virar infinito</td>
+</tr>
+
+</tbody>
+
+</table>
+
+<div class="slide-footer">
+<span class="logo-text">PYTHON</span>
+<span>Slide 7 / 8</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- SLIDE 8 -->
+
+<div class="slide scrollable">
+
+<div class="slide-content">
+
+<h2>
+<i class="fa-solid fa-dumbbell"></i>
+Atividades
+</h2>
+
+<div class="exercise-list">
+
+<div class="exercise-card">
+<div class="ex-number">1</div>
+
+<h4>Contador</h4>
+
+<p>
+Faça um contador de 1 até 10.
+</p>
+</div>
+
+<div class="exercise-card">
+<div class="ex-number">2</div>
+
+<h4>Soma</h4>
+
+<p>
+Some números de 1 até 100.
+</p>
+</div>
+
+<div class="exercise-card">
+<div class="ex-number">3</div>
+
+<h4>Pares</h4>
+
+<p>
+Mostre apenas números pares.
+</p>
+</div>
+
+<div class="exercise-card">
+<div class="ex-number">4</div>
+
+<h4>Senha</h4>
+
+<p>
+Peça senha até acertar.
+</p>
+</div>
+
+</div>
+
+<div class="slide-footer">
+<span class="logo-text">PYTHON</span>
+<span>Slide 8 / 8</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- CONTROLES -->
+
+<div class="nav-controls">
+
+<button class="nav-btn" id="btnPrev">
+<i class="fa-solid fa-chevron-left"></i>
+</button>
+
+<span class="slide-counter" id="slideCounter">
+1 / 8
+</span>
+
+<button class="nav-btn" id="btnNext">
+<i class="fa-solid fa-chevron-right"></i>
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
